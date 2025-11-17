@@ -1,0 +1,9 @@
+services:
+  glossary-api:
+    build: .
+    container_name: glossary-api
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
